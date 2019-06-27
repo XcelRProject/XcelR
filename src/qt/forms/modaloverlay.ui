@@ -7,11 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>640</width>
-    <height>385</height>
+    <height>419</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
    <property name="sizeConstraint">
@@ -50,7 +53,7 @@
       <item>
        <widget class="QWidget" name="contentWidget" native="true">
         <property name="styleSheet">
-         <string notr="true">#contentWidget { background: rgba(255,255,255,240); border-radius: 6px; }
+         <string notr="true">#contentWidget { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(116, 116, 191, 255), stop:1 rgba(52, 138, 199, 255)); border-radius: 6px; }
 
 QLabel { color: rgb(40,40,40);  }</string>
         </property>
@@ -129,6 +132,9 @@ QLabel { color: rgb(40,40,40);  }</string>
              </property>
              <item>
               <widget class="QLabel" name="infoText">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
                <property name="text">
                 <string>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xcelr network, as detailed below.</string>
                </property>
@@ -147,6 +153,9 @@ QLabel { color: rgb(40,40,40);  }</string>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
                 <string>Attempting to spend xcelrs that are affected by not-yet-displayed transactions will not be accepted by the network.</string>
@@ -211,6 +220,9 @@ QLabel { color: rgb(40,40,40);  }</string>
                <bold>true</bold>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
              <property name="text">
               <string>Number of blocks left</string>
              </property>
@@ -218,6 +230,9 @@ QLabel { color: rgb(40,40,40);  }</string>
            </item>
            <item row="0" column="1">
             <widget class="QLabel" name="numberOfBlocksLeft">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
              <property name="text">
               <string>Unknown...</string>
              </property>
@@ -230,6 +245,9 @@ QLabel { color: rgb(40,40,40);  }</string>
                <weight>75</weight>
                <bold>true</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
              </property>
              <property name="text">
               <string>Last block time</string>
@@ -244,6 +262,9 @@ QLabel { color: rgb(40,40,40);  }</string>
                <verstretch>0</verstretch>
               </sizepolicy>
              </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
              <property name="text">
               <string>Unknown...</string>
              </property>
@@ -256,6 +277,9 @@ QLabel { color: rgb(40,40,40);  }</string>
                <weight>75</weight>
                <bold>true</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
              </property>
              <property name="text">
               <string>Progress</string>
@@ -273,6 +297,9 @@ QLabel { color: rgb(40,40,40);  }</string>
              </item>
              <item>
               <widget class="QProgressBar" name="progressBar">
+               <property name="styleSheet">
+                <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(27, 177, 37, 255), stop:0.691176 rgba(14, 255, 14, 255));</string>
+               </property>
                <property name="value">
                 <number>24</number>
                </property>
@@ -291,6 +318,9 @@ QLabel { color: rgb(40,40,40);  }</string>
                <bold>true</bold>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
              <property name="text">
               <string>Progress increase per hour</string>
              </property>
@@ -298,6 +328,9 @@ QLabel { color: rgb(40,40,40);  }</string>
            </item>
            <item row="4" column="1">
             <widget class="QLabel" name="progressIncreasePerH">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
              <property name="text">
               <string>calculating...</string>
              </property>
@@ -311,6 +344,9 @@ QLabel { color: rgb(40,40,40);  }</string>
                <bold>true</bold>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
              <property name="text">
               <string>Estimated time left until synced</string>
              </property>
@@ -318,6 +354,9 @@ QLabel { color: rgb(40,40,40);  }</string>
            </item>
            <item row="5" column="1">
             <widget class="QLabel" name="expectedTimeLeft">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
              <property name="text">
               <string>calculating...</string>
              </property>
@@ -348,6 +387,9 @@ QLabel { color: rgb(40,40,40);  }</string>
            </item>
            <item>
             <widget class="QPushButton" name="closeButton">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
              <property name="text">
               <string>Hide</string>
              </property>

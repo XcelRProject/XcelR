@@ -13,11 +13,17 @@
   <property name="windowTitle">
    <string>Welcome</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(116, 116, 191, 255), stop:1 rgba(52, 138, 199, 255));</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="welcomeLabel">
      <property name="styleSheet">
-      <string notr="true">QLabel { font-style:italic; }</string>
+      <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>Welcome to %1.</string>
@@ -45,6 +51,9 @@
    </item>
    <item>
     <widget class="QLabel" name="storageLabel">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>As this is the first time the program is launched, you can choose where %1 will store its data.</string>
      </property>
@@ -62,6 +71,9 @@
    </item>
    <item>
     <widget class="QRadioButton" name="dataDirDefault">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Use the default data directory</string>
      </property>
@@ -69,6 +81,9 @@
    </item>
    <item>
     <widget class="QRadioButton" name="dataDirCustom">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Use a custom data directory:</string>
      </property>
@@ -106,7 +121,11 @@
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <widget class="QLineEdit" name="dataDirectory"/>
+          <widget class="QLineEdit" name="dataDirectory">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QPushButton" name="ellipsisButton">
@@ -202,6 +221,12 @@
    </item>
    <item>
     <widget class="QLabel" name="lblExplanation1">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</string>
      </property>
@@ -212,6 +237,12 @@
    </item>
    <item>
     <widget class="QLabel" name="lblExplanation2">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</string>
      </property>
@@ -222,6 +253,12 @@
    </item>
    <item>
     <widget class="QLabel" name="lblExplanation3">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</string>
      </property>
@@ -245,6 +282,9 @@
    </item>
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>

@@ -10,6 +10,9 @@
     <height>396</height>
    </rect>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(116, 116, 191, 255), stop:1 rgba(52, 138, 199, 255));</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
    <item>
     <widget class="QFrame" name="frame2">
@@ -33,6 +36,9 @@
           <property name="toolTip">
            <string>An optional amount to request. Leave this empty or zero to not request a specific amount.</string>
           </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
           <property name="text">
            <string>&amp;Amount:</string>
           </property>
@@ -48,6 +54,9 @@
          <widget class="QLabel" name="label_3">
           <property name="toolTip">
            <string>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the XcelR network.</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
           </property>
           <property name="text">
            <string>&amp;Message:</string>
@@ -65,10 +74,16 @@
           <property name="toolTip">
            <string>An optional label to associate with the new receiving address.</string>
           </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
          </widget>
         </item>
         <item row="2" column="2">
          <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
           <property name="text">
            <string>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</string>
           </property>
@@ -78,6 +93,9 @@
          <widget class="QLabel" name="label_2">
           <property name="toolTip">
            <string>An optional label to associate with the new receiving address.</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
           </property>
           <property name="text">
            <string>&amp;Label:</string>
@@ -107,6 +125,9 @@
               <height>0</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>&amp;Request payment</string>
             </property>
@@ -126,6 +147,9 @@
             </property>
             <property name="toolTip">
              <string>Clear all fields of the form.</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
              <string>Clear</string>
@@ -208,6 +232,9 @@
             <property name="toolTip">
              <string>Native segwit addresses (aka Bech32 or BIP-173) reduce your transaction fees later on and offer better protection against typos, but old wallets don't support them. When unchecked, an address compatible with older wallets will be created instead.</string>
             </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>Generate native segwit (Bech32) address</string>
             </property>
@@ -254,6 +281,9 @@
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(255, 255, 255);</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
@@ -268,6 +298,9 @@
           <weight>75</weight>
           <bold>true</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
          <string>Requested payments history</string>
@@ -297,6 +330,9 @@
           <property name="toolTip">
            <string>Show the selected request (does the same as double clicking an entry)</string>
           </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
           <property name="text">
            <string>Show</string>
           </property>
@@ -316,6 +352,9 @@
           </property>
           <property name="toolTip">
            <string>Remove the selected entries from the list</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
           </property>
           <property name="text">
            <string>Remove</string>
